@@ -1,1 +1,63 @@
-Test
+<html><head>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<script type="text/javascript" src="script.js"></script>
+<script type="text/javascript" src="diagram.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="diagram.css" />
+</head><body>
+<div id="wrapper">
+    <section>
+        <h1>Sweet Spot</h1>
+        <p>A <a href="http://www.quirky.com/">Quirky</a> idea for shower temperature management</p>
+    </section>
+    <section>
+        <div id="diagram" class="color-0">
+            <div id="sweet-spot-outer">
+                <div id="sweet-spot-color"></div>
+                <div id="knob-outer">
+                    <div id="knob-inner"></div>
+                    <div id="knob-1">
+                        <div class="shadow"></div>
+                        <div class="inner spin spun">
+                            <div class="part-1"></div>
+                            <div class="part-2"></div>
+                            <div class="part-3"></div>
+                            <div class="part-4"></div>
+                            <div class="part-5"></div>
+                            <div class="part-6"></div>
+                            <div class="dot"></div>
+                        </div>
+                    </div>
+                    <div id="knob-2" class="hidden">
+                        <div class="shadow"></div>
+                        <div class="inner spin spun">
+                            <div class="part-1"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="center">
+            <a id="toggle" onclick="sweetspot.toggle();">Hide</a> &mdash;
+            <a id="toggle" onclick="sweetspot.reverse();">Reverse</a> &mdash;
+            <a id="toggle" onclick="sweetspot.knob();">Change Knob</a> &mdash;
+            <a id="toggle" onclick="sweetspot.tiles();">Change Tile Color</a>
+        </p>
+    </section>
+    <section>
+        <p><b>Sweet Spot</b> is a simple rubber ring which hangs around your shower knob (and sticks to the shower wall with a magnetic adhesive). It is reversible to accomodate counter-clockwise and clockwise knobs.</p>
+        <div id="diagram" class="color-0">
+            <div id="sweet-spot-outer">
+                <div id="sweet-spot-color"></div>
+                <div id="sweet-spot-mask"></div>
+            </div>
+        </div>
+    </section>
+    <div id="clear-footer"></div>
+    <footer>
+        <p>Made with &#10084;</p>
+    </footer>
+</div>
+</body></html>
