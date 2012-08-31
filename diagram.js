@@ -9,7 +9,9 @@ sweetspot = {
         sweetspot.diagrams.click(sweetspot.tiles);
         $('#knob-inner, #knob-1, #knob-2').click(sweetspot.knob);
 
-        sweetspot.rain();
+        if (!navigator.userAgent.match(/iPhone/i) || !navigator.userAgent.match(/iPod/i)) {
+            sweetspot.rain();
+        }
     },
     rain: function() {
         var createDrop, makeRain, rain, diagram;
